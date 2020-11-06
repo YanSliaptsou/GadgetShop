@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div align="center">
+    <h1>Посмотрите видео, как выбрать ноутбук!</h1>
+    </div>
+
+<div align="center">
+    <video autoplay controls preload="auto"  width="640">
+   <source src="../static/media/videos/laptop.mp4" type="video/mp4">
+    <p>Браузер не поддерживает видео. <a href="../static/media/videos/laptop.mp4">Скачать файл.</a> </p>
+</video>
+</div>
+
+    <div align="center">
+    <h1>О том, как выбрать телефон, вы узнаете в этом видео!</h1>
+    </div>
+
+<div align="center">
+    <video autoplay controls preload="auto"  width="640">
+   <source src="../static/media/videos/smartphone.mp4" type="video/mp4">
+    <p>Браузер не поддерживает видео. <a href="../static/media/videos/smartphone.mp4">Скачать файл.</a> </p>
+</video>
+</div>
+
+ <div align="center">
+    <h1>Сомневаетесь в выборе планшета? Тогда посмотрите это видео!</h1>
+ </div>
+
+  <div align="center">
+    <video autoplay controls preload="auto"  width="640">
+   <source src="../static/media/videos/tablet.mp4" type="video/mp4">
+    <p>Браузер не поддерживает видео. <a href="../static/media/videos/tablet.mp4">Скачать файл.</a> </p>
+</video>
+</div>
+
+{% endblock %}

@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+        <a name="up"><div class="section-top">
+            <img src="{% static 'images/background.jpg' %}" class="img-responsive">
+        </div></a>
+        <div class="section section1">
+            <div class="container">
+                <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="text-center">
+                        Новые поступления
+                    </h1>
+                </div>
+{#                    {{ products }}#}
+                    {% for product_image in products_images %}
+                        {% include 'landing/product_item.html' %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    <a  name="phones"><div class="section section2 phones-container">
+            <div class="container">
+                <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="text-center">
+                        Телефоны
+                    </h1>
+                </div>
+{#                    {{ products }}#}
+                    {% for product_image in products_images_phones %}
+                        {% include 'landing/product_item.html' %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div></a>
+    <a name="laptops"><div class="section section3 laptops-container">
+            <div class="container">
+                <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="text-center">
+                        Ноутбуки
+                    </h1>
+                </div>
+{#                    {{ products }}#}
+                    {% for product_image in products_images_laptops %}
+                        {% include 'landing/product_item.html' %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div></a>
+    <a name="tablets"><div class="section section4 tablets-container">
+            <div class="container">
+                <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="text-center">
+                        Планшеты
+                    </h1>
+                </div>
+{#                    {{ products }}#}
+                    {% for product_image in products_images_tablets %}
+                        {% include 'landing/product_item.html' %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div></a>
+    <div align="center">
+    <a href="#up">
+    <button class="btn btn-primary/ go-up">Наверх</button>
+    </a>
+    </div>
+{% endblock %}
